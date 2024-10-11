@@ -29,6 +29,7 @@ const Login = () => {
         withCredentials: true,
         
     }).then((res) => {
+        login()
         navigate('/home')
     }).catch((err) => {
         console.log(err)
